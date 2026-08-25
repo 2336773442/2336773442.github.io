@@ -16,12 +16,12 @@ git remote remove origin 2>nul
 git remote add origin https://github.com/2336773442/2336773442.github.io.git
 git branch -M main
 echo     done
-echo [3] Pushing to GitHub...
+echo [3] Pushing to GitHub (force, overwrites old web-uploaded files)...
 echo     A login window SHOULD pop up now.
 echo     Username: 2336773442
 echo     Password: your token (starts with ghp_)
 echo.
-git push -u origin main
+git push -u origin main --force
 echo.
 echo ============================================
 if %errorlevel%==0 (
